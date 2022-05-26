@@ -7,8 +7,7 @@ trigger:
 - main
 
 #varaiables
-pool:
-  vmImage: ubuntu-latest
+vmImagename: ubuntu-latest
 
 stages:
   - stage: Build
@@ -17,7 +16,7 @@ stages:
     - job: build
       displayName: Build job
       pool:
-        vmImage: $(vmImage) 
+        vmImage: $(vmImagename) 
       steps:
       #Task -1 build and push docker file
       - task: Docker@2
