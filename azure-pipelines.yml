@@ -21,7 +21,7 @@ stages:
       #Task -1 build and push docker file
       - task: Docker@2
         inputs:
-          containerRegistry: 'azr-devops'
+          containerRegistry: 'acr-devops'
           repository: 'app1images'
           command: 'buildAndPush'
           Dockerfile: '**/Dockerfile'
