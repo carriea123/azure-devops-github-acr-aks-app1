@@ -6,8 +6,8 @@
 trigger:
 - main
 
-#varaiables
-vmImagename: ubuntu-latest
+variables:
+  vmImagename: ubuntu-latest
 
 stages:
   - stage: Build
